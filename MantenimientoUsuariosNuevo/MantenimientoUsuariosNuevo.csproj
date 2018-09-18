@@ -31,7 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CapaDiseno">
-      <HintPath>..\..\..\..\..\Desktop\Navegador2\CapaDatos\CapaDiseno\bin\Debug\CapaDiseno.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\Visual Studio 2015\Projects\MantenimientePerfiles\MantenimientePerfiles\bin\Debug\CapaDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CheckBoxComboBox">
+      <HintPath>..\..\..\..\Documents\Visual Studio 2015\Projects\MantenimientePerfiles\MantenimientePerfiles\bin\Debug\CheckBoxComboBox.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
