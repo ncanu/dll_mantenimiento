@@ -12,6 +12,9 @@ namespace MantenimientoUsuariosNuevo
 {
     public partial class Diseño : Form
     {
+
+        Logica logica = new Logica();
+
         public Diseño()
         {
             InitializeComponent();
@@ -43,6 +46,24 @@ namespace MantenimientoUsuariosNuevo
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Logica logica = new Logica();
+            string username = textBoxUsuario.Text;
+            string password = textBoxPasswrod.Text;
+            logica.crearUsuario(username, password);
+        }
+
+        private void navegador1_Load(object sender, EventArgs e)
         {
 
         }

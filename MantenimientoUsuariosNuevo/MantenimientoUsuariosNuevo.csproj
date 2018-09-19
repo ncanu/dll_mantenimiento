@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{347305D0-2FB6-449D-9F08-C358258C16D9}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MantenimientoUsuariosNuevo</RootNamespace>
     <AssemblyName>MantenimientoUsuariosNuevo</AssemblyName>
@@ -29,13 +29,18 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CapaDiseno">
       <HintPath>..\..\..\..\Documents\Visual Studio 2015\Projects\MantenimientePerfiles\MantenimientePerfiles\bin\Debug\CapaDiseno.dll</HintPath>
     </Reference>
-    <Reference Include="CheckBoxComboBox">
-      <HintPath>..\..\..\..\Documents\Visual Studio 2015\Projects\MantenimientePerfiles\MantenimientePerfiles\bin\Debug\CheckBoxComboBox.dll</HintPath>
+    <Reference Include="CheckBoxComboBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CheckBoxComboBox\DemoApp\bin\Debug\CheckBoxComboBox.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -55,6 +60,7 @@
     <Compile Include="Diseño.Designer.cs">
       <DependentUpon>Diseño.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logica.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
